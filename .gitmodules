@@ -1,0 +1,3 @@
+[submodule "Trinity"]
+	path = Trinity
+	url = https://github.com/AbanoubNassem/Trinity.git
