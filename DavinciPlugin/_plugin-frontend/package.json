@@ -1,0 +1,27 @@
+{
+  "name": "trinity-plugin-sample",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "watch": "vite build --mode development --watch"
+  },
+  "devDependencies": {
+    "@inertiajs/react": "^1.0.14",
+    "@types/node": "^20.11.20",
+    "@types/react": "^18.2.58",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "postcss": "^8.4.35",
+    "primeicons": "^6.0.1",
+    "primereact": "^10.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.71.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.4"
+  }
+}

@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Trinity\Trinity\Trinity.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="wwwroot\**\*" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="Actions\" />
+        <Folder Include="Columns\" />
+        <Folder Include="Controllers\" />
+        <Folder Include="Fields\" />
+        <Folder Include="Resources\" />
+        <Folder Include="Widgets\" />
+        <Folder Include="wwwroot\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Remove="Locales\trinity-sample-plugin\en.json" />
+        <Content Include="Locales\trinity-sample-plugin\en.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+</Project>
